@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import {useState} from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faBell} from "@fortawesome/free-solid-svg-icons";
@@ -51,31 +50,25 @@ const DashBoard = () => {
             <li onClick={() => handleClickButton('LandingDashboard')}>
               <NavLink className="NavList">
                 <i class="bi bi-grid-3x3-gap-fill"></i>
-                <div className="">Dashboard</div>
+                <div className="fw-bolder fs-4">Dashboard</div>
               </NavLink>
             </li>
             <li onClick={() => handleClickButton('PostContent')}>
               <NavLink className="NavList">
                 <i class="bi bi-pencil-square"></i>
-                <div className="">Post</div>
+                <div className="fw-bolder">Post</div>
               </NavLink>
             </li>
             <li onClick={() => handleClickButton('Orders')}>
               <NavLink className="NavList">
                 <i class="bi bi-bag-check-fill"></i>
-                <div className="">Order</div>
+                <div className="fw-bolder">Order</div>
               </NavLink>
             </li>
             <li onClick={() => handleClickButton('Message')}>
               <NavLink className="NavList">
                 <i class="bi bi-envelope-at"></i>
-                <div className="">Message</div>
-              </NavLink>
-            </li>
-            <li onClick={() => handleClickButton('Setting')}>
-              <NavLink className="NavList ">
-                <i class="bi bi-gear"></i>
-                <div className="">Settings</div>
+                <div className="fw-bolder">Message</div>
               </NavLink>
             </li>
           </ul>
@@ -87,10 +80,6 @@ const DashBoard = () => {
           {activeFile === 'PostContent' && <PostContent />} 
           {activeFile === 'Orders' && <Orders />} 
           {activeFile === 'Message' && <Message />} 
-          
-          
-          {/* <Orders />
-          <Message /> */}
         </div>
       </div>
     </>

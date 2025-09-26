@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-      {/* <NavBar/> */}
+      <NavBar/>
         <Routes>
           <Route path='/' Component={Home}/>
           <Route path='/about' Component={About}/>
@@ -23,7 +23,7 @@ function App() {
           <Route path='/book_a_table' Component={BookTable}/>
           <Route path='/dashboard' Component={DashBoard}/>
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </BrowserRouter>
     </>
   );

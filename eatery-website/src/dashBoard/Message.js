@@ -23,7 +23,7 @@ const Message = () => {
               </h4>
 
               <div className="tableSection">
-                <table class="table ">
+                <table class="table table-striped table-hover table-bordered table-dark">
                   <thead className="">
                     <tr>
                       <th className="nameTh">Name</th>

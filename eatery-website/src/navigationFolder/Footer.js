@@ -6,11 +6,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserTie, faUtensils, faCartPlus, faHeadset } from '@fortawesome/free-solid-svg-icons'
 const Footer = () => {
   return (
-    <footer className='container-fluid px-lg-5 pt-lg-5 pt-4 position-relative buttom-0'>
+    <footer className='container-fluid px-lg-5 pt-lg-5 pt-4'>
       <div className='row px-lg-3 pt-lg-4 pb-lg-3'>
         <div className='col-lg-3'>
           <h3 className='text-white mb-4'>We serve you all your Naija Breakfast cravings.</h3>
-          <NavLink to='/donation' className='py-2 px-4 text-white rounded text-decoration-none fw-bold generalBtn bg-info'>Book A Table</NavLink>
+          <NavLink to='/book_a_table' className='py-2 px-4 text-white rounded text-decoration-none fw-bold generalBtn bg-info'>Book A Table</NavLink>
 
           <figure className='footerimg rounded mt-5'>
             {/* <img src={navLogoImg}></img> */}
