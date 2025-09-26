@@ -1,0 +1,14 @@
+footer{
+    background-color: rgba(0,0,0);
+}
+
+.footerBtn {
+    background-color: #2A2E94;
+}
+.footerBtn:hover {
+    background-color: #171db9;
+}
+
+.footerUl1 li{
+    list-style: none;
+}

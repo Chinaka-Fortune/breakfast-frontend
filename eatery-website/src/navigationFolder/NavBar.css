@@ -1,0 +1,49 @@
+.navStyling{
+    position: relative;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #333;
+    padding: 0 1.1rem;
+    transition: .5s;
+    color: white;
+}
+
+.navStyling:hover{
+color: rgb(0, 204, 255);
+}
+
+.navStyling span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-bottom: 2px solid cyan;
+    border-radius: 0.9rem;
+    transform: scale(0) translateY(3.04rem);
+    opacity: 0;
+    transition: .5s;
+}
+
+.navStyling:hover span{
+    transform: scale(1) translateY(0);
+    opacity: 1;
+}
+
+.hoverTextDiv{
+background-color: rgb(0,0,0,.6);
+width: 100%;
+transition: .5s linear;
+z-index: 22;
+}
+
+/* .hoverTextDiv ul li .hoverText{
+    display: flex;
+    justify-content: center;
+} */
+
+.hoverTextDiv ul li:hover{
+background-color: #333;
+transition: .7s linear;
+}

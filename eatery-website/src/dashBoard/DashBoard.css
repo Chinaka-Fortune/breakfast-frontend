@@ -1,0 +1,233 @@
+.topBar {
+    position: fixed;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 2fr 10fr 0.4fr 1fr;
+    align-items: center;
+    z-index: 1;
+    top: 0;
+}
+
+.logo h2 {
+    color: cyan;
+}
+
+.search {
+    position: relative;
+    width: 60%;
+    justify-self: center;
+}
+
+.search input {
+    width: 100%;
+    height: 40px;
+    padding: 0 40px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+}
+
+.search .searchIcon {
+    position: absolute;
+    top: 14px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.userDiv {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.userDiv img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+/* SIDE BAR */
+
+.sideBar {
+    position: fixed;
+    top: 60px;
+    width: 260px;
+    height: calc(100% - 60px);
+    background-color: cyan;
+    overflow-x: hidden;
+}
+
+.sideBar ul {
+    margin-top: 20px;
+}
+
+.sideBar ul li {
+    width: 100%;
+    list-style: none;
+}
+
+.sideBar ul li:hover {
+    background-color: white;
+}
+
+.sideBar ul li .NavList {
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+}
+
+.sideBar ul li:hover .NavList {
+    color: #299b63;
+
+}
+
+.sideBar ul li .NavList i {
+    min-width: 60px;
+    font-size: 24px;
+}
+
+/* MAIN SECTION */
+
+.main {
+    position: absolute;
+    top: 60px;
+    width: calc(100% - 260px);
+    left: 260px;
+    min-height: calc(100vh - 60px);
+    background-color: #f5f5f5;
+}
+
+.cards {
+    width: 100%;
+    padding: 35px 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.cards .card {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px 0 rgba(0, 0, 0, 0.08);
+}
+
+.cards .card:hover {
+    background-color: #299b63;
+}
+
+.cards .card:hover .numbers,
+.cards .card:hover .card-name,
+.cards .card:hover .icon-box {
+    color: white;
+}
+
+/* FORM START */
+
+.img-container {
+    width: 100%;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+@media (max-width:870px) {
+    .sideBar {
+        width: 60px;
+    }
+
+    .main {
+        left: 60px;
+        width: calc(100% - 60px);
+    }
+
+    .sideBar ul li .NavList i {
+        text-align: start;
+    }
+
+}
+
+@media (max-width:500px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .topBar {
+        grid-template-columns: 1fr 5fr 0.4fr 1fr;
+    }
+
+    .logo h2 {
+        font-size: 20px;
+    }
+
+    .search {
+        width: 80%;
+    }
+
+    .search input {
+        padding: 0 20px;
+    }
+
+    .navBell {
+        margin-right: 5px;
+    }
+
+    .userDiv {
+        width: 40px;
+        height: 40px;
+    }
+
+
+}
+
+.centerPostContainer {
+    height: calc(100vh - 60px);
+}
+
+.textAreaPost {
+    width: 100%;
+    height: 20vh;
+}
+
+.tableSection {
+    overflow: auto;
+}
+
+.tableSection::-webkit-scrollbar {
+    display: none;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    min-width: 56.25rem;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px 20px;
+}
+
+.nameTh {
+    width: 13rem;
+}

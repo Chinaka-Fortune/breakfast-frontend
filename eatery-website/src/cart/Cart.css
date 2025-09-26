@@ -1,0 +1,31 @@
+.CartImg-div{
+    width: 4rem;
+    height: 4rem;
+}
+
+.CartImg-div img{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 3/2;
+}
+
+.trash{
+    color: #333;
+}
+
+@media (max-width:767px) {
+    .overFlow{
+    overflow-x: scroll;
+    width: 100%;
+    
+}
+
+.overFlow::-webkit-scrollbar {
+  display: none;
+}
+
+}
+
+.qtyInput input{
+    width: 5rem;
+}

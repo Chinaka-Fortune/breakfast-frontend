@@ -1,0 +1,42 @@
+.img-div{
+width: fit-content;
+height: fit-content;
+}
+.img-div img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: center;
+aspect-ratio: 16/13;
+}
+
+.RowGapMenu{
+        row-gap: 2rem;
+    }
+
+@media (min-width:768px) {
+    .theSizes{
+        width: 30%;   
+    }
+}
+
+@media (min-width:1024px) {
+    .theSizes{
+        width: 17%;
+        transition: .5s;   
+    }
+
+    .RowGapMenu{
+        row-gap: 4rem;
+    }
+}
+@media (min-width:1200px) {
+
+    .RowGapMenu{
+        row-gap: 3rem;
+    }
+
+    .theSizes:hover{
+scale: 1.1;
+    }
+}
